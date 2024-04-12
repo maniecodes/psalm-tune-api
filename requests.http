@@ -1,0 +1,31 @@
+### create a new hymn
+POST http://localhost:3000/hymns
+content-type: application/json
+
+{
+  "id": "3",
+  "name": "kafukafuhawo Kple DzidzƆhawo"
+}
+
+### create a new song
+POST http://localhost:3000/songs/3
+content-type: application/json
+
+{
+  "songId": "2",
+  "title": "Mina míatsɔ ha kɔkɔea ɖe",
+  "verses": [
+    {
+      "verseNumber": "1",
+      "text": "1.	Mina míatsɔ ha kɔkɔea ɖe Ado ŋuikɔkɔe na Tenuvia, Lɔlɔ̃ Mawu ʃ̵ e Vi mavɔ. To ’ʃ̵ e ku kple ’ʃ̵ e agbe me, Oo, ’menuveve mavɔ ! Èʋu Dziʃ̵ omɔ, ɖe Mawu fia mí. Kafukafu, bubu etc."
+    },
+    {
+      "verseNumber": "2",
+      "text": "2.	Yesu, xɔ míaʃ̵ e bubuwo, Wò, si anye ha na tɔwòwo Le dzidzimewo katã me. Le esime míekpɔ ɖeɖe To wò abiwo kple fuwo me, Mianɔ tsitretsitsi ʃ̵ ’agbe. Kafukafu, bubu etc."
+    },
+    {
+      "verseNumber": "chorus",
+      "text": "Kafukafu, bubu Na Yesu Ɖela la ! Haleluya !Ẽ, bubu na wò Aʃ̵ etɔ! Haleluya ! Haleluya !"
+    }
+  ]
+}
